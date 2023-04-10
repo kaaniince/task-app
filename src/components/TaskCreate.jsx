@@ -18,7 +18,7 @@ function TaskCreate({ onCreate }) {
   };
 
   return (
-    <div className="w-4/12">
+    <div className="w-96">
       <h2>Task Giriniz!</h2>
       <form className="flex flex-col">
         <label className="task-label">Başlık</label>
