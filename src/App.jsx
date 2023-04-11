@@ -17,11 +17,19 @@ function App() {
     setTasks(createdTasks);
   };
 
+  const deleteTaskByID = (id) => {
+    const afterDeletingTasks = tasks.filter((task) => {
+      return task.id !== id;
+    });
+
+    setTasks(afterDeletingTasks);
+  };
+
   return (
     <div className="App flex flex-col justify-start  items-center min-h-screen  w-full">
       <TaskCreate onCreate={createTask} />
       <h1 className="mt-10 mb-10 text-bold">Görevler</h1>
-      <TaskList tasks={tasks} />
+      <TaskList tasks={tasks} onDelete={deleteTaskByID} />
     </div>
   );
 }
