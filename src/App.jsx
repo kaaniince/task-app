@@ -18,9 +18,9 @@ function App() {
   };
 
   return (
-    <div className="App flex flex-col justify-center h-screen min-h-0 items-center">
+    <div className="App flex flex-col justify-start  items-center min-h-screen  w-full">
       <TaskCreate onCreate={createTask} />
-      <h1>Görevler</h1>
+      <h1 className="mt-10 mb-10 text-bold">Görevler</h1>
       <TaskList tasks={tasks} />
     </div>
   );

@@ -18,16 +18,16 @@ function TaskCreate({ onCreate }) {
   };
 
   return (
-    <div className="w-96">
-      <h2>Task Giriniz!</h2>
+    <div className="w-96 mt-5 border p-5 rounded-md shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 ">
+      <h2 className="text-bol text-bold">Task Giriniz!</h2>
       <form className="flex flex-col">
-        <label className="task-label">Başlık</label>
+        <label className="task-label text-bold">Header</label>
         <input
           value={title}
           onChange={handleChange}
           className="p-5 border border-black  border-gradient-to-r from-green-400 via-green-500 to-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80  rounded-md text-sm px-5 py-2.5 mr-2 mb-2"
         />
-        <label className="task-label">Task</label>
+        <label className="task-label text-bold">Task</label>
         <textarea
           onChange={handleTaskDesc}
           value={taskDesc}
@@ -39,7 +39,7 @@ function TaskCreate({ onCreate }) {
           type="button"
           className="mt-10 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
         >
-          Oluştur
+          Create
         </button>
       </form>
     </div>

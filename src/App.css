@@ -5,3 +5,15 @@
 .task-label {
   margin: 5% 0px;
 }
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+.App {
+  background-image: url(images/bg-light.jpg);
+  background-size: cover;
+  background-position: center;
+}
